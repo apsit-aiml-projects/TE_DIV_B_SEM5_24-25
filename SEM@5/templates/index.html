@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Banking Chatbot Using RAG</h1>
+        <form id="question-form">
+            <label for="question">Ask a question:</label>
+            <input type="text" id="question" placeholder="Type your question here..." required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results">
+            <h2>Result:</h2>
+            <p id="output"></p>
+        </div>
+    </div>
+</body>
+</html>
